@@ -1,0 +1,333 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+::placeholder {
+  color: purple;
+  font-weight: bold;
+  font-size: 16px;
+}
+.container {
+  overflow: hidden;
+  width: 99vw;
+  margin: auto;
+}
+.container header {
+  width: 100vw;
+  height: max-content;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: purple;
+  color: white;
+}
+.container header h1 a {
+  background-color: inherit;
+  color: white;
+  margin-left: 50px;
+  font-size: 35px;
+}
+.container header .menu {
+  display: flex;
+  align-items: center;
+}
+.container header .menu a {
+  background-color: inherit;
+  color: white;
+  font-size: 30px;
+  margin-right: 40px;
+  width: max-content;
+  height: 45px;
+  text-align: center;
+  line-height: 40px;
+  transition: 0.2s;
+}
+.container header .menu a:hover {
+  border: 1px solid white;
+  border-top-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  border-top: calc(1px + 2px) solid white;
+  border-right: calc(1px + 2px) solid white;
+}
+.container .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../image/bg_header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .title h1 {
+  background-color: inherit;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 1px 1px 3px grey;
+}
+.container .title h2 {
+  background-color: inherit;
+  color: white;
+  text-align: center;
+  font-size: 26px;
+  text-shadow: 1px 1px 3px grey;
+}
+.container .title h3 {
+  background-color: inherit;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  text-shadow: 1px 1px 3px grey;
+}
+.container .title button {
+  width: 80px;
+  height: 40px;
+  background-color: purple;
+  color: white;
+  border: 1px solid white;
+  border-top-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  border-top: calc(1px + 2px) solid white;
+  border-right: calc(1px + 2px) solid white;
+}
+.container .title button:hover {
+  filter: contrast(70%);
+}
+.container .service {
+  width: 100vw;
+  height: max-content;
+  padding-top: 20px;
+  background-color: #f3dede;
+  color: white;
+}
+.container .service h2 {
+  width: 100vw;
+  text-align: center;
+  background-color: inherit;
+  color: purple;
+  font-size: 26px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.container .service_desc {
+  width: 99vw;
+  height: max-content;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.container .service_desc_box {
+  width: 450px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.container .service_desc_box img {
+  width: 400px;
+}
+.container .service_desc_box h3 {
+  background-color: inherit;
+  color: purple;
+  margin: 0;
+}
+.container .service_desc_box li {
+  background-color: inherit;
+  color: purple;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.container .service .service_choice {
+  height: max-content;
+  background-color: purple;
+  color: white;
+  padding-top: 20px;
+}
+.container .service .service_choice h2 {
+  width: 100vw;
+  text-align: center;
+  background-color: purple;
+  color: white;
+}
+.container .service .service_choice_flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.container .service .service_choice_flex_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  margin-bottom: 20px;
+  padding: 20px;
+  padding-top: 20px;
+  transition: 0.3s;
+  border: 1px solid white;
+  border-top-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  border-top: calc(1px + 2px) solid white;
+  border-right: calc(1px + 2px) solid white;
+}
+.container .service .service_choice_flex_box img {
+  width: 180px;
+  height: 180px;
+}
+.container .service .service_choice_flex_box h1 {
+  font-size: 40px;
+  margin: 0;
+  background-color: purple;
+  color: white;
+}
+.container .service .service_choice_flex_box h3 {
+  margin: 0;
+  font-size: 26px;
+  background-color: purple;
+  color: white;
+}
+.container .service .service_choice_flex_box:hover {
+  transform: scale(110%);
+}
+.container .price {
+  height: max-content;
+  background-color: #f3dede;
+  color: white;
+  padding-top: 20px;
+}
+.container .price h1 {
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: inherit;
+  color: purple;
+}
+.container .price_flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.container .price_flex_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid purple;
+  border-top-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  border-top: calc(1px + 2px) solid purple;
+  border-right: calc(1px + 2px) solid purple;
+}
+.container .price_flex_box h2 {
+  background-color: inherit;
+  color: purple;
+}
+.container .price_flex_box hr {
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background-color: purple;
+  color: white;
+}
+.container .price_flex_box p {
+  background-color: inherit;
+  color: purple;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 3px;
+}
+.container .price_flex_box button {
+  margin-top: 20px;
+  width: 100px;
+  height: 40px;
+  background-color: purple;
+  color: white;
+  border: 1px solid purple;
+  border-top-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  border-top: calc(1px + 2px) solid purple;
+  border-right: calc(1px + 2px) solid purple;
+}
+.container .price_flex_box button:hover {
+  filter: contrast(70%);
+}
+.container .contact {
+  padding-top: 10px;
+  background-color: #f3dede;
+  color: white;
+}
+.container .contact h1 {
+  width: 100vw;
+  margin-top: 40px;
+  text-align: center;
+  background-color: inherit;
+  color: purple;
+}
+.container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container form #name,
+.container form #email,
+.container form #txt {
+  outline: none;
+  background-color: inherit;
+  color: purple;
+  border: 1px solid purple;
+  border-top-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  border-top: calc(1px + 2px) solid purple;
+  border-right: calc(1px + 2px) solid purple;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.container form #name,
+.container form #email {
+  width: 400px;
+  height: 60px;
+}
+.container form #send {
+  width: 120px;
+  height: 40px;
+  margin-bottom: 30px;
+  background-color: purple;
+  color: white;
+  border: 1px solid white;
+  border-top-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  border-top: calc(1px + 2px) solid white;
+  border-right: calc(1px + 2px) solid white;
+}
+.container form #send:hover {
+  filter: contrast(70%);
+}
+.container footer {
+  background-color: purple;
+  color: white;
+  padding: 10px;
+}
+.container footer h3 {
+  text-align: center;
+  margin: 0;
+}
+.container footer h3:first-of-type {
+  margin-bottom: 20px;
+}

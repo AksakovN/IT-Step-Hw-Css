@@ -1,0 +1,28 @@
+.container{
+    background-color: rgba(128, 128, 128, 0.151);
+    width: 500px;
+    height: 300px;
+    margin: auto;
+}
+.box{
+    background-color: rgba(128, 128, 128, 0.322);
+    width: 60px;
+    height: 45px;
+    display: inline-block;
+    padding: px;
+}
+.innercontainer{
+    margin-left: 60px;
+    padding-top: 40px;
+}
+.txt_red{
+color:rgb(148, 13, 13);
+text-align: center;
+margin-top: 6px;
+font-size: 30px;
+}
+.txt_black{
+text-align: center;
+margin-top: 6px;
+font-size: 30px;
+}

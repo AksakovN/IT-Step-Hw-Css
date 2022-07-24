@@ -1,0 +1,297 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    margin: auto;
+    margin-top: 0;
+    padding-top: 50px;
+    width: 1000px;
+    height: 200px;
+    background-color: rgb(255, 102, 0);
+
+}
+h1{
+    color: black;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+    font-size: 40px;
+}
+h2{
+    margin: 0;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+.content{
+    width: 1000px;
+    margin: auto;
+}
+h3{
+    border-bottom: 2px dotted black;
+    width: max-content;
+    height: 21px;
+}
+h4{
+    margin: auto;
+    width: 100px;
+    height: 21px;
+    font-size: 20px;
+    border-bottom: 2px dotted black;
+    width: max-content;
+}
+.clearfix::after{
+  content: "";
+  display: block;
+}
+.clearfix::after {
+  clear: both;
+}
+.box1 h3:nth-of-type(2){
+    margin: 0;
+}
+img{
+    width: 70px;
+    float: right;
+}
+h6{
+    margin-top: 15px;
+    color: black;
+    text-align: center;
+}
+.box1, .box2{
+    margin: 0 25px;
+    width: 450px;
+    float: left;
+}
+.text1{
+    display: inline-block;
+    height: max-content;
+}
+.text2{
+    display: inline-block;
+    height: max-content;
+}
+.container{
+    width: 1000px;
+    /* height: max-content; */
+    margin: auto;
+}
+.box_1{
+    color: black;
+    font-size: 12px;
+    text-align: left;
+    line-height: 20px;
+    font-weight: normal;
+}
+.price{
+    margin: 0;
+    color: black;
+    font-weight: 900;
+    font-size: 14px;
+    text-align: right;
+}
+.container .box:first-of-type{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 90px;
+    margin: 15px;
+    margin-left: 35px;
+    width: 160px;
+    height: 120px;
+    background-color: rgb(255, 102, 0);
+    border-top-right-radius:20px;
+    float: left;
+    position: relative;
+}
+.container p:first-of-type::before{
+    content: "TOP SALES";
+    color: black;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    width: 120px;
+    height: 20px;
+    background-color: rgb(255, 230, 0);
+    position: absolute;
+    top: 5px;
+    border-top-right-radius:7px;
+    border-bottom-right-radius: 7px;
+    left: 2px;
+}
+.container .box:nth-of-type(2){
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    /* line-height: 90px; */
+    margin: 15px;
+    width: 160px;
+    height: 120px;
+    background-color: red;
+    overflow: visible;
+    border-top-right-radius:20px;
+    float: left;
+    position: relative;
+}
+.container .box:nth-of-type(2) p{
+    margin-top: 40px;
+    margin-bottom: 45px;
+}
+.container .box:nth-of-type(2) p::before{
+    content: "NEW!";
+    color: black;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    width: 120px;
+    height: 20px;
+    background-color: rgb(255, 230, 0);
+    position: absolute;
+    top: 5px;
+    border-top-right-radius:7px;
+    border-bottom-right-radius: 7px;
+    left: 2px;
+}
+.container .box:nth-of-type(3){
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 90px;
+    margin: 15px;
+    width: 160px;
+    height: 120px;
+    background-color: rgb(28, 26, 179);
+    border-top-right-radius:20px;
+    float: left;
+    position: relative;
+}
+.container .box:nth-of-type(3) p::before{
+    content: "MOST POPULAR";
+    color: black;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    width: 120px;
+    height: 20px;
+    background-color: rgb(255, 230, 0);
+    position: absolute;
+    top: 5px;
+    border-top-right-radius:7px;
+    border-bottom-right-radius: 7px;
+    left: 2px;
+}
+.container .box:nth-of-type(4){
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 90px;
+    margin: 15px;
+    width: 160px;
+    height: 120px;
+    background-color: rgb(98, 7, 172);
+    border-top-right-radius:20px;
+    float: left;
+    position: relative;
+}
+.container .box:nth-of-type(4) p::before{
+    content: "SUPER SALE";
+    color: black;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    width: 120px;
+    height: 20px;
+    background-color: rgb(255, 230, 0);
+    position: absolute;
+    top: 5px;
+    border-top-right-radius:7px;
+    border-bottom-right-radius: 7px;
+    left: 2px;
+}
+.container .box:nth-of-type(5){
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    /* line-height: 90px; */
+    margin: 15px;
+    width: 160px;
+    height: 120px;
+    background-color: rgb(7, 165, 47);
+    border-top-right-radius:20px;
+    float: left;
+    position: relative;
+}
+.container .box:nth-of-type(5) p{
+    margin-top: 40px;
+    margin-bottom: 45px;
+
+}
+.container .box:nth-of-type(5) p::before{
+    content: "MOST POPULAR";
+    color: black;
+    font-size: 10px;
+    line-height: 20px;
+    width: 120px;
+    height: 20px;
+    background-color: rgb(255, 230, 0);
+    position: absolute;
+    top: 5px;
+    border-top-right-radius:7px;
+    border-bottom-right-radius: 7px;
+    left: 2px;
+}
+footer{
+    width: 1000px;
+    height: 150px;
+    margin: auto;
+    margin-top: 210px;
+    background-color: rgb(194, 193, 193);
+    border-top: 1px solid #000;
+}
+.info{
+    margin-left: 80px;
+    font-size: 14px;
+    line-height: 20px;
+    float: left;
+    cursor: pointer;
+}
+.info:nth-of-type(2){
+    margin-left: 230px;
+}
+.info:nth-of-type(3){
+    margin-left: 180px;
+}
+.footer{
+    width: 1000px;
+    height: max-content;
+    margin: auto;
+    margin-top: 12px;
+    background-color: rgba(0, 0, 0, 0.925);
+}
+.footer p{
+    color: rgb(226, 221, 221);
+    margin: 0;
+    margin-left: 80px;
+    line-height: 25px;
+    display: inline-block;
+    font-size: 14px;
+    
+}
+.footer p sup{
+    font-size: 9px;
+}
+.footer p:nth-of-type(2){
+    margin-left: 500px;
+}

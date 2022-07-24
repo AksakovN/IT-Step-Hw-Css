@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="head">
+            <div class="reg">
+                <h1>Registration form</h1>
+                <input type="text" name="Username" id="User" placeholder="Username">
+                <label for="User"></label>
+                <input type="text" name="Email" id="Email" placeholder="Email address">
+                <label for="Email"></label>
+                <div class="pass">
+                    <input type="password" name="Passvord" id="Pass" placeholder="Passvord">
+                    <label for="Pass"></label>
+                    <input type="password" name="Confirm passvord" id="Conf" placeholder="Confirm passvord">
+                </div>
+            </div>
+            <div class="pers">
+                <h1>Personal details</h1>
+                <input type="text" name="First name" id="First_N" placeholder="First name">
+                <input type="text" name="Last name" id="Last_N" placeholder="Last name">
+                <select name="Gender" id="Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <input type="date" name="Date" id="Date">
+            </div>
+        </div>
+        <div class="check2">
+            <div class="box1">
+                <input type="checkbox">
+                <h4>I want to receive news and special offers</h4>
+            </div>
+            <div class="box2">
+                <input type="checkbox">
+                <h4>I agree with the Terms and Conditions</h4>
+            </div>
+        </div>
+        <hr>
+        <div class="sub">
+            <input type="submit" id="Sub" value="Submit">
+        </div>
+    </div>
+    <div class="container">
+        <h2>Inputs</h2>
+        <div class="input">
+            <div class="text_check">
+                <input type="text" name="text_check" placeholder="Enter some text">
+            </div>
+            <div class="valid_text">
+                <input type="text" name="valid_text" placeholder="valid text">
+            </div>
+            <div class="invalid_text">
+                <input type="text" name="invalid_text" placeholder="invalid text">
+            </div>
+        </div>
+        <h2>Check boxes</h2>
+        <div class="checkbox">
+            <div class="check">
+                <input type="checkbox" name="yes" id="check">
+                <label for="check">Subscribe</label>
+            </div>
+            <div class="check1">
+                <input type="checkbox" name="no" id="check1">
+                <label for="check1">Subscribe</label>
+            </div>
+        </div>
+        <h2>Radio buttons</h2>
+        <div class="rb">
+            <span class="Gender">Gender:</span>
+            <div class="rb1">
+                <input type="radio" name="Radio" id="rb1">
+                <label for="rb1">Male</label>
+            </div>
+            <div class="rb2">
+                <input type="radio" name="Radio" id="rb2">
+                <label for="rb2">Female</label>
+            </div>
+        </div>
+        <h2>Buttons</h2>
+        <div class="button">
+            <input type="button" value="1">
+            <input type="button" value="2">
+            <input type="button" value="3">
+            <input type="button" value="4">
+            <input type="button" value="5">
+            <input type="button" value="+">
+            <input type="button" value="-">
+        </div>
+        <h2>Text area</h2>
+        <textarea name="" id="" cols="80" rows="15"></textarea>
+    </div>
+    
+</body>
+
+</html>

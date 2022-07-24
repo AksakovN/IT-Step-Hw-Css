@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none ;
+}
+h2{
+    color: white;
+    font-size: 18px;
+    margin-left: 50px;
+    padding-top: 8px;
+    margin-bottom: 6px;
+}
+a{
+    text-decoration: none;
+    margin: 0;
+}
+.container{
+    background-color: #285c56 ;
+    height: 35px;
+}
+.container:hover .box{
+    display:block;
+    position:absolute;
+    visibility: inherit;
+}
+.box{
+    background-color: #367f77 ;
+    position: absolute;
+    visibility: hidden;
+}
+.txt_1{
+    text-align: justify ;
+    padding: 30px;
+    margin-top: 0;
+    color: white;
+    line-height: 25px;
+}

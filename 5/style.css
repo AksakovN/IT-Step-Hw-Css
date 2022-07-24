@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    margin: 90px;
+    background-color: rgb(2, 217, 255);
+    border-radius: 50%;
+    padding-top: 25px;
+    padding-left: 23px;
+    position: relative;
+    animation: box 2s linear 0.1s;
+}
+.box::before{
+    content: '';
+    display: block;
+    width: 110px;
+    height: 110px;
+    border: 2px solid rgb(2, 217, 255) ;
+    border-radius: 50%;
+    position: absolute;
+    top: -7px;
+    left:-7px;
+    animation: box1 1.5s linear 1s infinite alternate;
+}
+.img1{
+    animation: phone 1.5s linear infinite alternate;
+}
+@keyframes phone{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+@keyframes box{
+    from{
+        display: none;
+        opacity: 0;
+        transform: translateX(-200px);
+        
+    }
+    to{
+        display: block;
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes box1{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+.container{
+    margin: auto;
+    width: 600px;
+}
+.innercontainer{
+    display:inline-block;
+    width: 250px;
+    height: 250px;
+    margin: 1px;
+    background-color: rgb(236, 229, 229);
+    text-align: center;
+    line-height: 250px;
+    position: relative;
+}
+.innercontainer:hover .img2{
+    transform: scale(250);
+    visibility: visible;
+}
+.img2{
+    height: 1px;
+    position: absolute;
+    top: 124.5px;
+    left: 130px;
+    transition:transform 1s;
+    visibility: hidden;
+}
+

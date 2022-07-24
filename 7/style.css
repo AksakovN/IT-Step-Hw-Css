@@ -1,0 +1,233 @@
+body{
+    margin: 0;
+}
+.box{
+    width: 1200px;
+    margin: auto;
+}
+.container{
+    width: 500px;
+    height: 220px;
+    margin: auto;
+    background-color: black;
+}
+button{
+    width: 220px;
+    height: 80px;
+    margin-top: 70px;
+    margin-left: 135px;
+    text-align: left;
+    position: relative;
+    padding-left: 30px;
+    background-color: black;
+    color: rgb(3, 89, 248);
+    font-size: 30px;
+    font-weight: bolder;
+    border-color: rgb(3, 89, 248);
+    border-radius: 10px;
+    box-shadow:1px 1px 10px 5px rgb(3, 89, 248), inset 0px 0px 10px 5px rgb(3, 89, 248);
+    transition: 0.5s;
+}
+button:hover{
+    width: 270px;
+    color: rgb(170, 3, 248);
+    border-color: rgb(170, 3, 248);
+    box-shadow:1px 1px 10px 5px rgb(170, 3, 248), inset 0px 0px 10px 5px rgb(170, 3, 248) ;
+}
+button:hover::before{
+    content: "";
+    position: absolute;
+    top: 36px;
+    right: 20px;
+    display:block;
+    width: 40px;
+    border-bottom: 4px solid rgb(170, 3, 248);
+    transition: 0.5s;
+}
+button:hover::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 26px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    transform:rotateZ(-45deg);
+    border-bottom: 4px solid rgb(170, 3, 248);
+    border-right: 4px solid rgb(170, 3, 248);
+    transition: 0.5s;
+}
+button:active{
+    width: 300px;
+    color: black;
+    background-color: rgb(0, 102, 255);
+    border-color: rgb(170, 3, 248);
+    box-shadow:1px 1px 10px 5px rgb(170, 3, 248), inset 0px 0px 10px 5px rgb(170, 3, 248) ;
+}
+button:active::before{
+    content: "";
+    position: absolute;
+    top: 36px;
+    right: 20px;
+    display:block;
+    width: 55px;
+    border-bottom: 4px solid black;
+}
+button:active::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 26px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    transform:rotateZ(-45deg);
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+}
+
+
+table{
+    height: 650px;
+    border-spacing: 0px 0px;
+    text-align: center;
+    vertical-align: middle;
+}
+td:empty {
+    visibility: hidden;
+  }
+table thead{
+    height: 40px;
+}
+table tfoot{
+    height: 120px;
+}
+.box thead tr th:first-of-type{
+    width: 150px;
+    background-color: rgb(231, 231, 79);
+}
+.box tbody tr td:first-of-type,
+.box tfoot tr td:first-of-type{
+    background-color: rgb(231, 231, 79);
+}
+.box thead tr th:nth-of-type(2){
+    width: 150px;
+    background-color: rgb(188, 169, 209);
+}
+.box tbody tr:nth-child(2) td:nth-child(1){
+    background-color: rgb(188, 169, 209);
+}
+.box tbody tr:nth-child(2) td:nth-child(2){
+    background-color: rgb(224, 148, 161);
+}
+.box tbody tr:nth-child(2) td:nth-child(3){
+    background-color: rgb(126, 230, 230);
+}
+.box tbody tr:nth-child(2) td:nth-child(4){
+    background-color: rgb(240, 158, 172);
+}
+.box tbody tr:nth-child(4) td:nth-child(2){
+    background-color: rgb(231, 231, 79);
+}
+.box tbody tr:nth-child(4) td:nth-child(3){
+    background-color: rgb(188, 169, 209);
+}
+.box tbody tr:nth-child(4) td:nth-child(4){
+    background-color: rgb(224, 148, 161);
+}
+.box tbody tr:nth-child(4) td:nth-child(5){
+    background-color: rgb(126, 230, 230);
+}
+.box tbody tr:nth-child(4) td:nth-child(6){
+    background-color: rgb(240, 158, 172);
+}
+.box tbody tr:nth-child(8) td:nth-child(2){
+    background-color: rgb(231, 231, 79);
+}
+.box tbody tr:nth-child(8) td:nth-child(3){
+    background-color: rgb(188, 169, 209);
+}
+.box tbody tr:nth-child(8) td:nth-child(4){
+    background-color: rgb(224, 148, 161);
+}
+.box tbody tr:nth-child(8) td:nth-child(5){
+    background-color: rgb(126, 230, 230);
+}
+.box tbody tr:nth-child(8) td:nth-child(6){
+    background-color: rgb(240, 158, 172);
+}
+.box tfoot tr:nth-child(1) td:nth-child(2){
+    background-color: rgb(231, 231, 79);
+}
+.box tfoot tr:nth-child(1) td:nth-child(3){
+    background-color: rgb(188, 169, 209);
+}
+.box tfoot tr:nth-child(1) td:nth-child(4){
+    background-color: rgb(224, 148, 161);
+}
+.box tfoot tr:nth-child(1) td:nth-child(5){
+    background-color: rgb(126, 230, 230);
+}
+.box tfoot tr:nth-child(1) td:nth-child(6){
+    background-color: rgb(240, 158, 172);
+}
+.box tbody tr td:nth-of-type(2){
+    background-color: rgb(188, 169, 209);
+}
+.box tfoot tr td:nth-of-type(2){
+    background-color: rgb(188, 169, 209);
+}
+.box thead tr th:nth-of-type(3){
+    width: 150px;
+    background-color: rgb(224, 148, 161);
+}
+.box tbody tr td:nth-of-type(3){
+    background-color: rgb(224, 148, 161);
+}
+.box tfoot tr td:nth-of-type(3){
+    background-color: rgb(224, 148, 161);
+}
+.box thead tr th:nth-of-type(4){
+    width: 200px;
+    background-color: rgb(126, 230, 230);
+}
+.box tbody tr td:nth-of-type(4){
+    background-color: rgb(126, 230, 230);
+}
+.box tfoot tr td:nth-of-type(4){
+    background-color: rgb(126, 230, 230);
+}
+.box thead tr th:nth-of-type(5){
+    width: 150px;
+    background-color: rgb(240, 158, 172);
+}
+.box tbody tr td:nth-of-type(5){
+    background-color: rgb(240, 158, 172);
+}
+.box tfoot tr td:nth-of-type(5){
+    background-color: rgb(240, 158, 172);
+}
+.box thead tr,
+.box tbody tr:nth-of-type(2){
+    font-weight: bold;
+}
+.box tbody tr:first-of-type td:first-of-type{
+    font-style: normal;
+    font-weight: bold;
+}
+.box tbody tr:nth-of-type(1){
+    font-style: italic;
+}
+.box tbody tr:nth-of-type(3),
+.box tbody tr:nth-of-type(7),
+.box tbody tr:nth-of-type(11){
+    font-style: italic;
+    text-align: left;
+}
+.box tbody tr:nth-of-type(3) td:first-of-type,
+.box tbody tr:nth-of-type(7) td:first-of-type,
+.box tbody tr:nth-of-type(11) td:first-of-type{
+    font-style: italic;
+    text-align: center;
+}
+

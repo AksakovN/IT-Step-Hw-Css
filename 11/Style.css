@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;     
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100vw;
+    min-width: max-content;
+    height: 100vh;
+    max-height: max-content;
+    background-color: rgb(31, 150, 158);
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+header{
+    position: fixed;
+    min-width: 100%;
+    height: 10%;
+    background-color: rgb(22, 108, 114);
+}
+main{
+    width: max-content;
+    display: flex;
+}
+h1{
+    margin: 0;
+    color: white;
+    font-size: 24px;
+    position: fixed;
+    top: 30px;
+    left: 40px;
+}
+h2{
+    margin: 0;
+    margin-left: 10px;
+    font-size: 20px;
+
+}
+.block{
+    min-width: 100%;
+    height: 10%;
+}
+.wrapper{
+    padding: 20px;
+    margin: 30px;
+    width: 400px;
+    height: 750px;
+    background-color: rgb(218, 210, 210);
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 10px;
+}
+.box{
+    margin: 10px;
+    padding: 15px;
+    width: 340px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+p{
+    margin: 0;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.icons{
+    width: 60%;
+    height: 60px;
+    display: flex;
+    position: absolute;
+    bottom: -20px;
+}
+img{
+    
+    width: 25px;
+    height: 25px;
+}
+.txt{
+    margin-left: 5px;
+    margin-right: 20px;
+    font-size: 24px;
+}
+.icons img:first-of-type{
+    margin-right: 30px;
+}
+#first::after{
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background-image: url(./image/avatar_1.png);
+}
+#second::after{
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background-image: url(./image/avatar_3.png);
+}
+#third::after{
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background-image: url(./image/avatar_2.png);
+}

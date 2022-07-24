@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-light bg-light flex-nowrap mb-4">
+            <div class="container">
+                <a class="navbar-brand d-flex gap-3 align-items-center text-danger" href="./index.html">
+                    <img src="./image/ad.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
+                    AD'S BOARD
+                </a>
+            </div>
+            <div class="container justify-content-end">
+                <button type="button" class="btn btn-warning fw-bold me-3">+ New ad</button>
+                <a class="navbar-brand d-flex align-items-center text-primary" href="#">
+                    <img src="./image/av_64.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
+                    My profile
+                </a>
+            </div>
+        </nav>
+        <form class="container d-flex align-items-center gap-3 p-3 bg-secondary bg-gradient rounded">
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg></span>
+                <input type="text" class="form-control" placeholder="Wardrobe" aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                    </svg></span>
+                <input type="text" class="form-control" placeholder="Kiev, Shevchenkovskiy" aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-usb-mini-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3 3a1 1 0 0 0-1 1v1.293L.293 7A1 1 0 0 0 0 7.707V12a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V7.707A1 1 0 0 0 15.707 7L14 5.293V4a1 1 0 0 0-1-1H3Zm.5 5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5Z" />
+                    </svg></span>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>House & garden</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </form>
+        <div class="container">
+            <div class="row border mt-5 mb-4 rounded">
+                <div class="col-2 d-flex justify-content-center">
+                    <img src="./image/furniture_1.png" alt="" width="120" height="140"
+                        class="d-inline-block align-text-top">
+                </div>
+                <div class="col-8 d-flex flex-column justify-content-between">
+                        <a href="./result.html" class="navbar-brand text-primary fs-3 text-danger">Italian wooden wardrobe</a>
+                        <div class="container d-flex p-0">
+                            <p class="text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                </svg> Kiev, Shevchenkovskiy</p>
+                            <p class="ms-3 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-clock-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                                </svg> Today at 10.45</p>
+                        </div>
+                </div>
+                <div class="col-2 d-flex justify-content-center fs-2">
+                    120$
+                </div>
+            </div>
+            <div class="row border mb-4 rounded">
+                <div class="col-2 d-flex justify-content-center">
+                    <img src="./image/furniture_3.png" alt="" width="120" height="140"
+                        class="d-inline-block align-text-top">
+                </div>
+                <div class="col-8 d-flex flex-column justify-content-between">
+                        <p class="text-primary fs-3">Sell used wardrobe</p>
+                        <div class="container d-flex p-0">
+                            <p class="text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                </svg> Kiev, Shevchenkovskiy</p>
+                            <p class="ms-3 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-clock-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                                </svg> Today at 9.34</p>
+                        </div>
+                </div>
+                <div class="col-2 d-flex justify-content-center fs-2">
+                    50$
+                </div>
+            </div>
+            <div class="row border mb-4 rounded">
+                <div class="col-2 d-flex justify-content-center">
+                    <img src="./image/furniture_2.png" alt="" width="120" height="140"
+                        class="d-inline-block align-text-top">
+                </div>
+                <div class="col-8 d-flex flex-column justify-content-between">
+                        <p class="text-primary fs-3">Wardrobe Helga from Germany</p>
+                        <div class="container d-flex p-0">
+                            <p class="text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                </svg> Kiev, Shevchenkovskiy</p>
+                            <p class="ms-3 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-clock-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                                </svg> Today at 0.23</p>
+                        </div>
+                </div>
+                <div class="col-2 d-flex justify-content-center fs-2">
+                    70$
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-3 mt-3 d-flex justify-content-center align-items-center"><img src="./image/ad_bw.png"
+                        alt="" width="120" height="120" class="d-inline-block align-text-top"></div>
+                <div class="col-3 d-flex flex-column justify-content-between ">
+                    <a href="#">Mobile applications</a>
+                    <a href="#">Paid services</a>
+                    <a href="#">Advertising on the website</a>
+                    <a href="#">For the press</a>
+                    <a href="#">Help and Feedback</a>
+                </div>
+                <div class="col-3 d-flex flex-column justify-content-between ">
+                    <a href="#">AD'S BOARD blog</a>
+                    <a href="#">Safety regulations</a>
+                    <a href="#">How to sell and buy?</a>
+                    <a href="#">Term of Use</a>
+                    <a href="#">Partners</a>
+                </div>
+                <div class="col-3 d-flex flex-column justify-content-between">
+                    <a href="#">Works at AD'S BOARD</a>
+                    <a href="#">Popular Searches</a>
+                    <a href="#">Map of Regions</a>
+                    <a href="#">Advertising preferences</a>
+                    <a href="#">Site Map</a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>

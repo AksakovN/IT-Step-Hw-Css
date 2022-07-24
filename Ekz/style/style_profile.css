@@ -1,0 +1,39 @@
+#nav1 {
+  background-color: inherit;
+  color: #525050;
+  fill: grey;
+}
+#nav1::after {
+  display: none;
+}
+#nav1:hover {
+  background-color: #b30e4d;
+  color: white;
+  fill: white;
+  cursor: pointer;
+  filter: contrast(70%);
+}
+#nav2 {
+  background-color: #b30e4d;
+  color: white;
+  fill: white;
+  cursor: pointer;
+  position: relative;
+}
+#nav2::after {
+  content: "";
+  position: absolute;
+  right: -5px;
+  width: 20px;
+  height: 20px;
+  background-color: #b30e4d;
+  transform: rotateZ(45deg);
+}
+#foot {
+  margin-top: 60px;
+}
+@media screen and (max-width: 1350px) {
+  #prof_main {
+    display: block;
+  }
+}
